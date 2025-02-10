@@ -39,14 +39,14 @@
 
 
 
-
+/* 
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #121212; /* Dark background */
+  background-color: #121212; /* Dark background *//*
   box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
   position: relative;
 }
@@ -54,7 +54,7 @@ header {
 .logo {
   font-size: 25px;
   font-weight: 600;
-  color: #8a4baf; /* Matching theme color */
+  color: #8a4baf; /* Matching theme color *//*
   text-transform: uppercase;
 }
 
@@ -77,7 +77,7 @@ header {
 
 .link a {
   text-decoration: none;
-  color: white; /* White text for better visibility */
+  color: white; /* White text for better visibility *//*
   font-weight: 500;
   transition: 0.3s;
   padding: 8px 12px;
@@ -85,6 +85,83 @@ header {
 }
 
 .link a:hover {
-  color: #8a4baf; /* Theme hover color */
+  color: #8a4baf; /* Theme hover color *//*
   background: rgba(255, 255, 255, 0.1);
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Navbar Overlapping the Hero Section */
+.navbar {
+  position: absolute; /* Overlaps the hero section */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background: rgba(255, 255, 255, 0.1); /* Glassmorphism Effect */
+  backdrop-filter: blur(20px);
+  box-shadow: -53.77px 53.77px 53.77px 0px rgba(255, 255, 255, 0.1) inset,
+              53.77px -53.77px 53.77px 0px rgba(86, 86, 86, 0.1) inset;
+  z-index: 1000; /* Ensures it stays above the hero section */
+}
+
+/* Logo */
+.logo1 {
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 35px;
+  border: none;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-btn {
+  background-color: #B34A09;
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
+  border-radius: 5px;
+}
+
+.nav-btn:hover {
+  transform: scale(1.05);
+}
+
+/* User Section */
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Login/Register Button */
+.login-btn {
+  background-color: #B34A09;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+  background-color: #92380c;
+}
+
+
